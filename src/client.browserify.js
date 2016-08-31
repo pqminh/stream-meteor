@@ -1,1 +1,1 @@
-Stream.stream = require('getstream');
+Stream.stream = Npm.require('getstream');

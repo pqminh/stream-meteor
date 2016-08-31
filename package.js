@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'getstream:stream-meteor',
-  version: '0.4.2',
+  name: 'minhpq:stream-meteor',
+  version: '0.0.1',
   summary: 'Getstream.io integration package for Meteor',
-  git: 'https://github.com/GetStream/stream-meteor',
+  git: 'https://github.com/pqminh/stream-meteor',
   documentation: 'README.md',
 });
 
@@ -24,7 +24,7 @@ Package.onUse(function(api) {
   api.addFiles('src/namespace.js');
   api.addFiles('src/client.browserify.js', 'client');
   api.addFiles('src/server/namespace.js', 'server');
-  api.addFiles(['config/getstream.js', 
+  api.addFiles(['config/getstream.js',
                 'stream-meteor.js',
                 'src/feed-manager.js',
                 'src/collections.js',
@@ -39,7 +39,7 @@ Package.onTest(function(api) {
   api.use(['underscore', 'mongo']);
   api.use('insecure');
   api.use('accounts-base');
-  api.use('getstream:stream-meteor');
+  api.use('minhpq:stream-meteor');
 
   api.addFiles('test/spec.js');
   api.addFiles('test/client/spec.js', ['client']);
