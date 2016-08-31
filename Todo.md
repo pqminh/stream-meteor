@@ -1,0 +1,2 @@
+- Add tests to check if publications are created
+- Do not allow subscription to any feed_id (somehow let the user define how to restrict access)

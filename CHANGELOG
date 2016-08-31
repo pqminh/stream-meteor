@@ -1,0 +1,60 @@
+================
+ Change history
+================
+
+
+0.4.0
+=====
+:release-date: 11-03-2016
+:by: Matthisk Heimensen
+
+* Added: Retrieve unread and unseen status for notification feeds reactively via Stream.notifications
+         and Stream.feedManager.getNotificationFeedStats()
+
+0.3.7
+=====
+:release-date: 01-03-2016
+:by: Matthisk Heimensen
+
+* Removed dependency on getstream-bin-deps (include bin deps in the package)
+
+0.3.6
+=====
+:release-date: 08-01-2016
+:by: Matthisk Heimensen
+
+* Fixed: set publication status to ready when no userId is supplied to supply Stream feed for
+
+
+0.3.3
+=====
+:release-date: 08-12-2015
+:by: Matthisk Heimensen
+
+* Fixed bug where news feeds weren't build correctly by feedManager.getNewsFeeds
+
+
+0.3.1
+=====
+:release-date: 08-12-2015
+:by: Matthisk Heimensen
+
+* activityVerb can be either a string or a function returning a string
+
+0.3.0
+=====
+:release-date: 07-12-2015
+:by: Matthisk Heimensen
+
+* BREAKING: Publish on Stream.feeds.*feedGroup* instead of Stream.feed.*feedGroup* to keep naming consistent
+  with the synthesized collections used to store feed data
+* Check registerActivity's inputs for correct values
+* Compatible with Meteor version 1.0.0+
+
+0.2.2
+=====
+:release-date: 03-12-2015 
+:by: Matthisk Heimensen
+
+* Added: feed publications now add correct records on live updates received from getstream.io API
+
